@@ -7,16 +7,23 @@ Rapq is a web application that allows people to perform a natural language searc
 ## Dependency
 App data are crawled using my [huawei-spider](https://github.com/wy-go/huawei-spider)
 
+## Run Rapq
+1. Terminal run:
+```
+ docker run -p 8050:8050 scrapinghub/splash
+ brew services restart elasticsearch-full
+```
+2. Run 'huawei-spider/huawei_spider/run'
+3. Wait to get data
+4. Run 'Rapq/runserver'
 
 ## Preview
-
 
 ### Search page:
 ![](https://raw.githubusercontent.com/wy-go/Rapq/main/readme-files/search.png)
 
 ### Search result:
 ![](https://raw.githubusercontent.com/wy-go/Rapq/main/readme-files/search-result.png)
-
 
 ## Technologies used
 Frontend:
