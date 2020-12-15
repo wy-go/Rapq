@@ -11,7 +11,21 @@ def se_search(query):
             "multi_match": {
                 "query": query,
                 "fields": ["name", "detail", "intro"],
-         #       "analyzer": "ik_max_word"  # didnot set analyzer for index
+                "type": "cross_fields"
+                #       "analyzer": "ik_max_word"  # set ik analyzer for index first
+            }
+        },
+        "rescore": {
+            "window_size": 30,
+            "query": {
+                "rescore_query": {
+                    "match_phrase": {
+                        "content": {
+                            "query": query,
+                            "slop": 50
+                        }
+                    }
+                }
             }
         }
     }
