@@ -1,6 +1,8 @@
 # Rapq
 App search engine for HUAWEI-AppGallery
  
+## Funtionality
+Rapq is a web application that allows people to perform a natural language search for apps. Rapq re-creates the experience of browsing through an application store. Search apps of interest and click on a product that is linked to an online store where it can be checked and installed.
  
 ## Dependency
 App data are crawled using my [huawei-spider](https://github.com/wy-go/huawei-spider)
